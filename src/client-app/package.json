@@ -1,0 +1,13 @@
+{
+  "name": "wow-buddy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/adamheald13/wow-buddy.git",
+  "author": "Adam Heald <adamheald13@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "react": "^16.6.3",
+    "redux": "^4.0.1"
+  }
+}

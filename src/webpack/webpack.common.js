@@ -18,14 +18,15 @@ module.exports = {
     cleanWebpackPlugin
   ],
   output: {
-    filename: '[name].bundle.js',
+    filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, '../client-app/dist'),
     publicPath: '/'
   },
   optimization: {
     splitChunks: {
       chunks: 'all'
-    }
+    },
+    runtimeChunk: 'single'
   },
   module: {
     rules: [

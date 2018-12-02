@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpacPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -10,7 +11,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'WoW Buddy',
       template: 'index.html'
-    })
+    }),
+    new CleanWebpacPlugin(['dist'])
   ],
   output: {
     filename: '[name].bundle.js',

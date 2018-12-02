@@ -7,6 +7,9 @@ module.exports = merge(common, {
     usedExports: true
   },
   devtool: 'inline-source-map',
+  output: {
+    filename: '[name].bundle.js',
+  },
   devServer: {
     contentBase: './dist'
   }

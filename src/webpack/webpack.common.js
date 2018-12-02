@@ -18,7 +18,6 @@ module.exports = {
     cleanWebpackPlugin
   ],
   output: {
-    filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, '../client-app/dist'),
     publicPath: '/'
   },

@@ -7,5 +7,8 @@ module.exports = merge(common, {
   devtool: 'source-map',
   plugins: [
     new webpack.HashedModuleIdsPlugin()
-  ]
+  ],
+  output: {
+    filename: '[name].[contenthash].js',
+  }
 });

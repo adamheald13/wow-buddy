@@ -1,6 +1,6 @@
 // Read in config that determines if dev or prod env
-const env = 'prod';
-// const env = 'dev';
+// const env = 'prod';
+const env = 'dev';
 
 const express = require('express');
 const webpack = require('webpack');

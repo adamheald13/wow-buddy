@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-const e = React.createElement;
+import HelloWorld from '../../components/HelloWorld';
 
 ReactDOM.render(
-  e('div', null, 'Hello BITCHES'),
+  React.createElement(HelloWorld),
   document.getElementById('App')
 );

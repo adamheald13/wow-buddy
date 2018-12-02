@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 
 const expressApp = express();
-const webpackConfig = require('../webpack.config.js');
+const webpackConfig = require('../webpack/webpack.common.js');
 const webpackCompiler = webpack(webpackConfig);
 
 // Tell express to use the webpack-dev-middleware and use the webpack.config.js

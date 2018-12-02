@@ -1,8 +1,9 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 
-e = React.createElement;
+const e = React.createElement;
 
 ReactDOM.render(
-  e('div', null, 'Hello World'),
+  e('div', null, 'Hello BITCHES'),
   document.getElementById('App')
 );

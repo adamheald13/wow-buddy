@@ -3,20 +3,26 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpacPlugin = require('clean-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
   entry: {
-    app: './entries/app/index.js',
-    footer: './entries/footer/index.js',
+    app: './client-app/entries/app/index.js',
+    footer: './client-app/entries/footer/index.js',
+  },
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist'
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'WoW Buddy',
-      template: 'index.html'
+      template: './client-app/index.html'
     }),
     new CleanWebpacPlugin(['dist'])
   ],
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/'
   },
   module: {
     rules: [

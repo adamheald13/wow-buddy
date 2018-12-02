@@ -3,12 +3,21 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpacPlugin = require('clean-webpack-plugin');
 
 module.exports = {
+  // production only
+  // mode: 'production',
+
+  // development only
   mode: 'development',
+  optimization: {
+    usedExports: true
+  },
+  devtool: 'inline-source-map',
+
+  // alway envs
   entry: {
     app: './client-app/entries/app/index.js',
     footer: './client-app/entries/footer/index.js',
   },
-  devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist'
   },

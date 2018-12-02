@@ -22,6 +22,11 @@ module.exports = {
     path: path.resolve(__dirname, '../client-app/dist'),
     publicPath: '/'
   },
+  optimization: {
+    splitChunks: {
+      chunks: 'all'
+    }
+  },
   module: {
     rules: [
       {

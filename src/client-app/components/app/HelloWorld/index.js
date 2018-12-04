@@ -3,11 +3,11 @@ import './style.css';
 
 class HelloWorld extends Component {
   render() {
-    const helloWorldElement = React.createElement('div', {
-      className: 'hello-world'
-    }, `Hello World`);
-
-    return helloWorldElement;
+    return (
+      <div className='hello-world'>
+        Hello world
+      </div>
+    );
   }
 }
 

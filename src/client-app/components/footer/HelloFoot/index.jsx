@@ -3,11 +3,11 @@ import './style.css';
 
 class HelloFoot extends Component {
   render() {
-    const helloFootElement = React.createElement('div', {
-      className: 'hello-foot'
-    }, `Hello Foot`);
-
-    return helloFootElement;
+    return (
+      <div className='hello-foot'>
+        Hello Foot
+      </div>
+    );
   }
 }
 

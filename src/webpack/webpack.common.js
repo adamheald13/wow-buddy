@@ -13,7 +13,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'WoW Buddy',
-      template: './client-app/index.html'
+      template: './client-app/template.html'
     }),
     cleanWebpackPlugin
   ],
